@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Trains</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron flex-row">
+      <img src="assets/images/train-icon.png" alt="trains" style="width:15%">
+      <h1 class="d-inline-flex">Traveling Railroad</h1>
+    </div>
+    <div class="card">
+      <h4 class="card-header">Current Train Schedule</h4>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Train Name</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Frequency (min)</th>
+              <th scope="col">Next Arival</th>
+              <th scope="col">Minutes Away</th>
+            </tr>
+          </thead>
+          <tbody class="tableBody">
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <h4 class="card-header">Add Train</h4>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label for="trainName">Train Name</label>
+            <input type="text" class="form-control" id="trainName" aria-describedby="" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="destination">Destination</label>
+            <input type="text" class="form-control" id="destination" aria-describedby="" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="firstTrain">First Train Time (HH:mm - military time)</label>
+            <input type="text" class="form-control" id="firstTrain" aria-describedby="" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="Frequency">Frequency (min)</label>
+            <input type="text" class="form-control" id="frequency" aria-describedby="" placeholder="">
+          </div>
+          <button type="submit" class="btn btn-primary" id="addTrain">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="assets/javascript/train.js"></script>
+</body>
+
+</html>
